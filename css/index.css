@@ -21,15 +21,15 @@ body{
 }
 
 .cabecalho .logo{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    text-decoration: underline;
+    font-size: 20px;
+    padding: 10px 20px;
+   
+    text-transform: capitalize;
     text-align: center;
-    line-height: 55px;
-
-    transition: 0.2s;
+    line-height: 25px;
+    white-space: nowrap;
+    border-radius: 60px;
+    
 }
 
 .cabecalho a:hover .logo{
@@ -41,7 +41,7 @@ body{
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
-
+    white-space: nowrap;
     transition: 0.2s;
 }
 

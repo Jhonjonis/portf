@@ -20,6 +20,10 @@
 }
 
 @media(max-width: 450px){
+    .cabecalho .logo{
+        font-size: 10px;
+        padding: 8px 16px;
+    }
     .cabecalho .menu ul li a{
         font-size: 10px;
         padding: 8px 16px;
