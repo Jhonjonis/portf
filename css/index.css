@@ -4,12 +4,13 @@ html{
 }
 
 body{
-    background-color: #282828;
+    background-color: #1f1f1f;
     font-family: 'ChaletComprime', sans-serif;
     margin: 0 auto;
     max-width: 1120px;
 
-    background: linear-gradient(150deg, #000000, #9e00ff);
+    /* Fundo mais profissional — gradiente azul acinzentado */
+    background: linear-gradient(150deg, #0f0f12, #1a2335, #2d4059);
     background-size: 120% 120%;
 }
 
@@ -23,18 +24,16 @@ body{
 .cabecalho .logo{
     font-size: 20px;
     padding: 10px 20px;
-   
     text-transform: capitalize;
     text-align: center;
     line-height: 25px;
     white-space: nowrap;
     border-radius: 60px;
-    
 }
 
 .cabecalho a:hover .logo{
-    color: #9443d8;
-    border: 2px solid #9443d8;
+    color: #8ac6ff;
+    border: 2px solid #8ac6ff;
 }
 
 .cabecalho .menu ul li a{
@@ -46,15 +45,14 @@ body{
 }
 
 .cabecalho .menu li a:hover{
-    background-color: #9443d8;
-    color: #fff;
+    background-color: #8ac6ff;
+    color: #000;
     border-radius: 50px;
 }
 
 .home{
     display: flex;
     min-height: calc(100vh - 125px);
-
     align-items: center;
     gap: 50px;
     justify-content: space-between;
@@ -97,22 +95,23 @@ body{
 }
 
 .home .redes-sociais a i:hover{
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #8ac6ff;
+    border: 1px solid #8ac6ff;
     transform: scale(1.1);
 }
 
 .home .container-fotos .foto{
     max-width: 450px;
-    border: 50%;
+    border-radius: 50%;
 }
 
 .home .container-fotos img{
     width: 100%;
     border-radius: 50%;
-    background: linear-gradient(to right, #8A35C8, #18C063, #00EEA2);
+    background: linear-gradient(to right, #375a7f, #4a9fff);
 }
 
+/* CERTIFICADOS */
 .certificados{
     padding: 70px 0 70px;
 }
@@ -131,7 +130,9 @@ body{
     align-items: center;
     position: relative;
     display: none;
-    }
+    border-radius: 16px; /* novo - arredondado */
+    overflow: hidden;
+}
 
 .certificados .certificado.ativo{
     display: block;
@@ -139,6 +140,7 @@ body{
 
 .certificados .certificado.ativo img{
     height: 180px;
+    border-radius: 16px; /* manter borda */
 }
 
 .certificados .certificado h3{
@@ -168,7 +170,8 @@ body{
 }
 
 .certificados .btn-mostrar-certificados:hover{
-    background-color: #9443d8;
+    background-color: #8ac6ff;
+    color: #000;
     transition: 0.3s;
 }
 
@@ -176,6 +179,7 @@ body{
     display: none;
 }
 
+/* PROJETOS */
 .projetos{
     padding: 70px 0 70px;
 }
@@ -202,7 +206,11 @@ body{
     align-items: center;
     position: relative;
     display: none;
-    }
+
+    border-radius: 16px; /* bordas arredondadas */
+    overflow: hidden; /* evita cantos quadrados no hover */
+    background-color: #00000070; /* leve contraste profissional */
+}
 
 .projetos .projeto.ativo{
     display: block;
@@ -210,6 +218,7 @@ body{
 
 .projetos .projeto.ativo img{
     height: 180px;
+    border-radius: 16px; /* manter consistência */
 }
 
 .projetos .projeto h3{
@@ -231,12 +240,12 @@ body{
     opacity: 0;
     transition: 0.3s;
     padding: 20px;
+    border-radius: 16px;
 }
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto{
     opacity: 0.7;
     background-color: #000000;
-
 }
 
 .projetos .btn-mostrar-projetos{
@@ -256,7 +265,8 @@ body{
 }
 
 .projetos .btn-mostrar-projetos:hover{
-    background-color: #9443d8;
+    background-color: #8ac6ff;
+    color: #000;
     transition: 0.3s;
 }
 
